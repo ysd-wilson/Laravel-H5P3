@@ -544,8 +544,8 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
                 ],
             ],
             'user' => [
-                "name" => "Escola123x! Wojczal",
-                "mail" => "mateusz@escolasoft.com"
+                "name" => "User Name",
+                "mail" => "demo@asd.com"
             ],
             'nonce' => $content['nonce'],
         ];
