@@ -15,6 +15,7 @@ class CreateHH5pLibrariesLanguagesTable extends Migration
     {
         Schema::create('hh5p_libraries_languages', function (Blueprint $table) {
             $table->bigInteger('library_id')->unsigned();
+            $table->foreign('library_id')->references('id')->on('hh5p_libraries')->onDelete('cascade');
             $table->string('language_code', 31);
             // TODO: this should be json
             $table->text('translation', 65535);

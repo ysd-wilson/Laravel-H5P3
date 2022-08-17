@@ -16,7 +16,9 @@ class CreateHH5pContentsLibrariesTable extends Migration
     {
         Schema::create('hh5p_contents_libraries', function (Blueprint $table) {
             $table->bigInteger('content_id')->unsigned();
+            $table->foreign('content_id')->references('id')->on('hh5p_contents')->onDelete('cascade');
             $table->bigInteger('library_id')->unsigned();
+            $table->foreign('library_id')->references('id')->on('hh5p_libraries')->onDelete('cascade');
             $table->string('dependency_type', 31);
             $table->smallInteger('weight')->unsigned()->default(0);
             $table->boolean('drop_css');
