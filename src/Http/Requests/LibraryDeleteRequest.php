@@ -15,10 +15,15 @@ class LibraryDeleteRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        $h5PContentRepository = app(H5PContentRepositoryContract::class);
-        $h5pLibrary = $h5PContentRepository->getLibraryById($this->route('id'));
+//        $h5PContentRepository = app(H5PContentRepositoryContract::class);
+//        $h5pLibrary = $h5PContentRepository->getLibraryById($this->route('id'));
+//
+//        return Gate::allows('delete', $h5pLibrary);
 
-        return Gate::allows('delete', $h5pLibrary);
+        $h5PContentRepository = app(H5PContentRepositoryContract::class);
+        $h5PContentRepository->getLibraryById($this->route('id'));
+
+        return true;
     }
 
     /**

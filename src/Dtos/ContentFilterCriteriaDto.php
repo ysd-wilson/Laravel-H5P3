@@ -19,10 +19,12 @@ class ContentFilterCriteriaDto extends CriteriaDto implements InstantiateFromReq
         if ($request->has('title')) {
             $criteria->push(new LikeCriterion('hh5p_contents.title', $request->input('title')));
         }
-        if ($user->can(H5PPermissionsEnum::H5P_LIST) && $request->has('author_id')) {
+//        if ($user->can(H5PPermissionsEnum::H5P_LIST) && $request->has('author_id')) {
+        if (true) {
             $criteria->push(new EqualCriterion('hh5p_contents.user_id', $request->input('author_id')));
         }
-        if (!$user->can(H5PPermissionsEnum::H5P_LIST) && $user->can(H5PPermissionsEnum::H5P_AUTHOR_LIST)) {
+//        if (!$user->can(H5PPermissionsEnum::H5P_LIST) && $user->can(H5PPermissionsEnum::H5P_AUTHOR_LIST)) {
+        if (true) {
             $criteria->push(new EqualCriterion('hh5p_contents.user_id', $user->getKey()));
         }
         if ($request->has('library_id')) {

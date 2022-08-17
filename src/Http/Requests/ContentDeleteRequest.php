@@ -10,10 +10,14 @@ class ContentDeleteRequest extends FormRequest
 {
     public function authorize(): bool
     {
-        $h5PContentRepository = app(H5PContentRepositoryContract::class);
-        $h5pContent = $h5PContentRepository->show($this->route('id'));
+//        $h5PContentRepository = app(H5PContentRepositoryContract::class);
+//        $h5pContent = $h5PContentRepository->show($this->route('id'));
+//
+//        return Gate::allows('delete', $h5pContent);
 
-        return Gate::allows('delete', $h5pContent);
+        $h5PContentRepository = app(H5PContentRepositoryContract::class);
+        $h5PContentRepository->show($this->route('id'));
+        return true;
     }
 
     public function rules(): array

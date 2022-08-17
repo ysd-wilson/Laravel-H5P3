@@ -6,7 +6,6 @@ use brnysn\LaravelH5P\Http\Controllers\FilesApiController;
 use brnysn\LaravelH5P\Http\Controllers\LibraryApiController;
 use brnysn\LaravelH5P\Http\Middleware\H5PLangMiddleware;
 use brnysn\LaravelH5P\Http\Middleware\QueryToken;
-
 use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => ['api', H5PLangMiddleware::class], 'prefix' => 'api'], function () {

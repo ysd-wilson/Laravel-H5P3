@@ -10,7 +10,9 @@ class ContentListRequest extends FormRequest
 {
     public function authorize(): bool
     {
-        return Gate::allows('list', H5PContent::class);
+//        return Gate::allows('list', H5PContent::class);
+        
+        return true;
     }
 
     public function rules(): array

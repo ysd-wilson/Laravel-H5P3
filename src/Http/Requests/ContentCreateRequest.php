@@ -11,7 +11,9 @@ class ContentCreateRequest extends FormRequest
 {
     public function authorize(): bool
     {
-        return Gate::allows('create', H5PContent::class);
+//        return Gate::allows('create', H5PContent::class);
+
+        return true;
     }
 
     public function rules(): array

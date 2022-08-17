@@ -16,14 +16,23 @@ class LibraryStoreRequest extends FormRequest
      */
     public function authorize()
     {
+//        if ($this->route('id')) {
+//            $h5PContentRepository = app(H5PContentRepositoryContract::class);
+//            $h5pLibrary = $h5PContentRepository->getLibraryById($this->route('id'));
+//
+//            return Gate::allows('update', $h5pLibrary);
+//        }
+//
+//        return Gate::allows('update', H5PLibrary::class);
+
         if ($this->route('id')) {
             $h5PContentRepository = app(H5PContentRepositoryContract::class);
-            $h5pLibrary = $h5PContentRepository->getLibraryById($this->route('id'));
+            $h5PContentRepository->getLibraryById($this->route('id'));
 
-            return Gate::allows('update', $h5pLibrary);
+            return true;
         }
 
-        return Gate::allows('update', H5PLibrary::class);
+        return true;
     }
 
     /**
