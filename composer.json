@@ -8,7 +8,6 @@
         "laravel/framework": "^8|^9",
         "h5p/h5p-core": "^1|dev-master",
         "h5p/h5p-editor": "^1|dev-master",
-        "escolalms/settings": "^0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.0",
