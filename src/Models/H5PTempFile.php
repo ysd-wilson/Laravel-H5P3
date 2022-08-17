@@ -1,6 +1,6 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P\Models;
+namespace brnysn\LaravelH5P\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

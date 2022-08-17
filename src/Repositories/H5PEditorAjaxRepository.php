@@ -1,13 +1,13 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P\Repositories;
+namespace brnysn\LaravelH5P\Repositories;
 
-use EscolaLms\HeadlessH5P\Models\H5PContent;
+use brnysn\LaravelH5P\Models\H5PContent;
 use Exception;
 use H5PEditorAjaxInterface;
-use EscolaLms\HeadlessH5P\Models\H5pLibrariesHubCache;
-use EscolaLms\HeadlessH5P\Helpers\Helpers;
-use EscolaLms\HeadlessH5P\Models\H5PLibrary;
+use brnysn\LaravelH5P\Models\H5pLibrariesHubCache;
+use brnysn\LaravelH5P\Helpers\Helpers;
+use brnysn\LaravelH5P\Models\H5PLibrary;
 use Illuminate\Support\Facades\Log;
 use Lcobucci\JWT\Parser;
 use Lcobucci\JWT\Signer\Key;

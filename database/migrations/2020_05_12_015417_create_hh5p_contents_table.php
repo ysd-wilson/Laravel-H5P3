@@ -15,6 +15,7 @@ class CreateHH5pContentsTable extends Migration
     {
         Schema::create('hh5p_contents', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->uuid('uuid')->unique()->nullable();
             $table->timestamps();
             $table->bigInteger('user_id')->nullable()->unsigned(); // ADD key
             $table->string('title');

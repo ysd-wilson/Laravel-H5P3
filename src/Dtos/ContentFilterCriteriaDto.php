@@ -1,12 +1,11 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P\Dtos;
+namespace brnysn\LaravelH5P\Dtos;
 
-use EscolaLms\Core\Dtos\Contracts\InstantiateFromRequest;
-use EscolaLms\Core\Dtos\CriteriaDto;
-use EscolaLms\Core\Repositories\Criteria\Primitives\EqualCriterion;
-use EscolaLms\Core\Repositories\Criteria\Primitives\LikeCriterion;
-use EscolaLms\HeadlessH5P\Enums\H5PPermissionsEnum;
+use brnysn\LaravelH5P\Dtos\Contracts\InstantiateFromRequest;
+use brnysn\LaravelH5P\Repositories\Criteria\Primitives\EqualCriterion;
+use brnysn\LaravelH5P\Repositories\Criteria\Primitives\LikeCriterion;
+use brnysn\LaravelH5P\Enums\H5PPermissionsEnum;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 

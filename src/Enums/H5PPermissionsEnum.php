@@ -1,8 +1,6 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P\Enums;
-
-use EscolaLms\Core\Enums\BasicEnum;
+namespace brnysn\LaravelH5P\Enums;
 
 class H5PPermissionsEnum extends BasicEnum
 {

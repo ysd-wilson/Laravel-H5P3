@@ -1,10 +1,8 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P\Database\Factories;
+namespace brnysn\LaravelH5P\Database\Factories;
 
-use EscolaLms\Auth\Models\User;
-use EscolaLms\Core\Enums\UserRole;
-use EscolaLms\HeadlessH5P\Models\H5PContent;
+use brnysn\LaravelH5P\Models\H5PContent;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class H5PContentFactory extends Factory
@@ -13,7 +11,7 @@ class H5PContentFactory extends Factory
 
     public function definition()
     {
-        $admin = User::role(UserRole::ADMIN)->inRandomOrder()->first();
+        $admin = User::random();
         return [
             'user_id' => empty($admin) ? null : $admin->id,
             'title' => 'The Title',

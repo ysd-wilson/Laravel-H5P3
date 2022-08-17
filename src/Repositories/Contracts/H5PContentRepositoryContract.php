@@ -1,12 +1,11 @@
 <?php
-namespace EscolaLms\HeadlessH5P\Repositories\Contracts;
+namespace brnysn\LaravelH5P\Repositories\Contracts;
 
-use EscolaLms\HeadlessH5P\Dtos\ContentFilterCriteriaDto;
+use brnysn\LaravelH5P\Dtos\ContentFilterCriteriaDto;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Collection;
-
-use EscolaLms\HeadlessH5P\Models\H5PContent;
-use EscolaLms\HeadlessH5P\Models\H5PLibrary;
+use brnysn\LaravelH5P\Models\H5PContent;
+use brnysn\LaravelH5P\Models\H5PLibrary;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 interface H5PContentRepositoryContract

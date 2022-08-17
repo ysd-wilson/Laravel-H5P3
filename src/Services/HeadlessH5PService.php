@@ -1,11 +1,11 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P\Services;
+namespace brnysn\LaravelH5P\Services;
 
-use EscolaLms\HeadlessH5P\Exceptions\H5PException;
-use EscolaLms\HeadlessH5P\Helpers\MargeFiles;
-use EscolaLms\HeadlessH5P\Models\H5PLibrary;
-use EscolaLms\HeadlessH5P\Services\Contracts\HeadlessH5PServiceContract;
+use brnysn\LaravelH5P\Exceptions\H5PException;
+use brnysn\LaravelH5P\Helpers\MargeFiles;
+use brnysn\LaravelH5P\Models\H5PLibrary;
+use brnysn\LaravelH5P\Services\Contracts\HeadlessH5PServiceContract;
 use H5PContentValidator;
 use H5PCore;
 use H5peditor;

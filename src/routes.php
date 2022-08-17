@@ -1,11 +1,11 @@
 <?php
 
-use EscolaLms\HeadlessH5P\Http\Controllers\ContentApiController;
-use EscolaLms\HeadlessH5P\Http\Controllers\EditorApiController;
-use EscolaLms\HeadlessH5P\Http\Controllers\FilesApiController;
-use EscolaLms\HeadlessH5P\Http\Controllers\LibraryApiController;
-use EscolaLms\HeadlessH5P\Http\Middleware\H5PLangMiddleware;
-use EscolaLms\HeadlessH5P\Http\Middleware\QueryToken;
+use brnysn\LaravelH5P\Http\Controllers\ContentApiController;
+use brnysn\LaravelH5P\Http\Controllers\EditorApiController;
+use brnysn\LaravelH5P\Http\Controllers\FilesApiController;
+use brnysn\LaravelH5P\Http\Controllers\LibraryApiController;
+use brnysn\LaravelH5P\Http\Middleware\H5PLangMiddleware;
+use brnysn\LaravelH5P\Http\Middleware\QueryToken;
 
 use Illuminate\Support\Facades\Route;
 

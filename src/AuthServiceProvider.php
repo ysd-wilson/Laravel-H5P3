@@ -1,11 +1,11 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P;
+namespace brnysn\LaravelH5P;
 
-use EscolaLms\HeadlessH5P\Models\H5PContent;
-use EscolaLms\HeadlessH5P\Models\H5PLibrary;
-use EscolaLms\HeadlessH5P\Policies\H5PContentPolicy;
-use EscolaLms\HeadlessH5P\Policies\H5PLibraryPolicy;
+use brnysn\LaravelH5P\Models\H5PContent;
+use brnysn\LaravelH5P\Models\H5PLibrary;
+use brnysn\LaravelH5P\Policies\H5PContentPolicy;
+use brnysn\LaravelH5P\Policies\H5PLibraryPolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
 class AuthServiceProvider extends ServiceProvider

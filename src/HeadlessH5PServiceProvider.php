@@ -1,19 +1,18 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P;
+namespace brnysn\LaravelH5P;
 
-use EscolaLms\HeadlessH5P\Commands\H5PSeedCommand;
-use EscolaLms\HeadlessH5P\Commands\StorageH5PLinkCommand;
-use EscolaLms\HeadlessH5P\Enums\ConfigEnum;
-use EscolaLms\HeadlessH5P\Providers\SettingsServiceProvider;
-use EscolaLms\HeadlessH5P\Repositories\Contracts\H5PContentRepositoryContract;
-use EscolaLms\HeadlessH5P\Repositories\H5PContentRepository;
-use EscolaLms\HeadlessH5P\Repositories\H5PEditorAjaxRepository;
-use EscolaLms\HeadlessH5P\Repositories\H5PEditorStorageRepository;
-use EscolaLms\HeadlessH5P\Repositories\H5PFileStorageRepository;
-use EscolaLms\HeadlessH5P\Repositories\H5PRepository;
-use EscolaLms\HeadlessH5P\Services\Contracts\HeadlessH5PServiceContract;
-use EscolaLms\HeadlessH5P\Services\HeadlessH5PService;
+use brnysn\LaravelH5P\Commands\H5PSeedCommand;
+use brnysn\LaravelH5P\Commands\StorageH5PLinkCommand;
+use brnysn\LaravelH5P\Enums\ConfigEnum;
+use brnysn\LaravelH5P\Repositories\Contracts\H5PContentRepositoryContract;
+use brnysn\LaravelH5P\Repositories\H5PContentRepository;
+use brnysn\LaravelH5P\Repositories\H5PEditorAjaxRepository;
+use brnysn\LaravelH5P\Repositories\H5PEditorStorageRepository;
+use brnysn\LaravelH5P\Repositories\H5PFileStorageRepository;
+use brnysn\LaravelH5P\Repositories\H5PRepository;
+use brnysn\LaravelH5P\Services\Contracts\HeadlessH5PServiceContract;
+use brnysn\LaravelH5P\Services\HeadlessH5PService;
 use H5PContentValidator;
 use H5PCore;
 use H5peditor;
@@ -35,7 +34,6 @@ class HeadlessH5PServiceProvider extends ServiceProvider
         $this->commands([H5PSeedCommand::class, StorageH5PLinkCommand::class]);
         $this->bindH5P();
         $this->app->register(AuthServiceProvider::class);
-        $this->app->register(SettingsServiceProvider::class);
     }
 
     private function bindH5P(): void

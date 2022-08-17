@@ -1,18 +1,17 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P\Repositories;
+namespace brnysn\LaravelH5P\Repositories;
 
-use EscolaLms\Auth\Events\Auth;
-use EscolaLms\Core\Repositories\Criteria\Criterion;
-use EscolaLms\HeadlessH5P\Dtos\ContentFilterCriteriaDto;
-use EscolaLms\HeadlessH5P\Exceptions\H5PException;
-use EscolaLms\HeadlessH5P\Helpers\Helpers;
-use EscolaLms\HeadlessH5P\Models\H5PContent;
-use EscolaLms\HeadlessH5P\Models\H5PLibrary;
-use EscolaLms\HeadlessH5P\Models\H5PTempFile;
-use EscolaLms\HeadlessH5P\Repositories\Contracts\H5PContentRepositoryContract;
-use EscolaLms\HeadlessH5P\Services\Contracts\HeadlessH5PServiceContract;
-use EscolaLms\HeadlessH5P\Traits\QueryExtendable;
+use brnysn\LaravelH5P\Repositories\Criteria\Criterion;
+use brnysn\LaravelH5P\Dtos\ContentFilterCriteriaDto;
+use brnysn\LaravelH5P\Exceptions\H5PException;
+use brnysn\LaravelH5P\Helpers\Helpers;
+use brnysn\LaravelH5P\Models\H5PContent;
+use brnysn\LaravelH5P\Models\H5PLibrary;
+use brnysn\LaravelH5P\Models\H5PTempFile;
+use brnysn\LaravelH5P\Repositories\Contracts\H5PContentRepositoryContract;
+use brnysn\LaravelH5P\Services\Contracts\HeadlessH5PServiceContract;
+use brnysn\LaravelH5P\Traits\QueryExtendable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;

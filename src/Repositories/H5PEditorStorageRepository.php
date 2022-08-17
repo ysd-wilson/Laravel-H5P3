@@ -1,13 +1,13 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P\Repositories;
+namespace brnysn\LaravelH5P\Repositories;
 
 use H5peditorStorage;
-use EscolaLms\HeadlessH5P\Models\H5PLibrary;
-use EscolaLms\HeadlessH5P\Models\H5PLibraryLanguage;
-use EscolaLms\HeadlessH5P\Models\H5PContent;
-use EscolaLms\HeadlessH5P\Models\H5PTempFile;
-use EscolaLms\HeadlessH5P\Helpers\Helpers;
+use brnysn\LaravelH5P\Models\H5PLibrary;
+use brnysn\LaravelH5P\Models\H5PLibraryLanguage;
+use brnysn\LaravelH5P\Models\H5PContent;
+use brnysn\LaravelH5P\Models\H5PTempFile;
+use brnysn\LaravelH5P\Helpers\Helpers;
 
 /**
  * A defined interface for the editor to communicate with the database of the

@@ -1,21 +1,20 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P\Http\Controllers;
+namespace brnysn\LaravelH5P\Http\Controllers;
 
-use EscolaLms\Core\Http\Controllers\EscolaLmsBaseController;
-use EscolaLms\HeadlessH5P\Http\Requests\LibraryDeleteRequest;
-use EscolaLms\HeadlessH5P\Http\Requests\LibraryInstallRequest;
-use EscolaLms\HeadlessH5P\Http\Requests\LibraryListRequest;
-use EscolaLms\HeadlessH5P\Http\Requests\LibraryUploadRequest;
-use EscolaLms\HeadlessH5P\Http\Resources\LibraryResource;
+use brnysn\LaravelH5P\Http\Requests\LibraryDeleteRequest;
+use brnysn\LaravelH5P\Http\Requests\LibraryInstallRequest;
+use brnysn\LaravelH5P\Http\Requests\LibraryListRequest;
+use brnysn\LaravelH5P\Http\Requests\LibraryUploadRequest;
+use brnysn\LaravelH5P\Http\Resources\LibraryResource;
 use Illuminate\Http\JsonResponse;
-use EscolaLms\HeadlessH5P\Http\Controllers\Swagger\LibraryApiSwagger;
-use EscolaLms\HeadlessH5P\Services\Contracts\HeadlessH5PServiceContract;
+use brnysn\LaravelH5P\Http\Controllers\Swagger\LibraryApiSwagger;
+use brnysn\LaravelH5P\Services\Contracts\HeadlessH5PServiceContract;
 
-use EscolaLms\HeadlessH5P\Http\Requests\LibraryStoreRequest;
+use brnysn\LaravelH5P\Http\Requests\LibraryStoreRequest;
 use Illuminate\Http\Request;
 
-class LibraryApiController extends EscolaLmsBaseController implements LibraryApiSwagger
+class LibraryApiController extends BaseController implements LibraryApiSwagger
 {
     private HeadlessH5PServiceContract $hh5pService;
 

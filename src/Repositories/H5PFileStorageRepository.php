@@ -1,6 +1,6 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P\Repositories;
+namespace brnysn\LaravelH5P\Repositories;
 
 use H5PFileStorage;
 use H5PCore;

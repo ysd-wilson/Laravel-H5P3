@@ -1,15 +1,15 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P\Repositories;
+namespace brnysn\LaravelH5P\Repositories;
 
-use EscolaLms\HeadlessH5P\Exceptions\H5PException;
-use EscolaLms\HeadlessH5P\Helpers\Helpers;
-use EscolaLms\HeadlessH5P\Models\H5PContent;
-use EscolaLms\HeadlessH5P\Models\H5PContentLibrary;
-use EscolaLms\HeadlessH5P\Models\H5PLibrary;
-use EscolaLms\HeadlessH5P\Models\H5PLibraryDependency;
-use EscolaLms\HeadlessH5P\Models\H5PLibraryLanguage;
-use EscolaLms\HeadlessH5P\Models\H5pLibrariesHubCache;
+use brnysn\LaravelH5P\Exceptions\H5PException;
+use brnysn\LaravelH5P\Helpers\Helpers;
+use brnysn\LaravelH5P\Models\H5PContent;
+use brnysn\LaravelH5P\Models\H5PContentLibrary;
+use brnysn\LaravelH5P\Models\H5PLibrary;
+use brnysn\LaravelH5P\Models\H5PLibraryDependency;
+use brnysn\LaravelH5P\Models\H5PLibraryLanguage;
+use brnysn\LaravelH5P\Models\H5pLibrariesHubCache;
 use H5PPermission;
 use H5PFrameworkInterface;
 use GuzzleHttp\Client;

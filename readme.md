@@ -1,17 +1,24 @@
 # Headless H5P Laravel API
 
-[![swagger](https://img.shields.io/badge/documentation-swagger-green)](https://escolalms.github.io/H5P/)
-[![codecov](https://codecov.io/gh/EscolaLMS/H5P/branch/main/graph/badge.svg?token=ci4VPQbrOI)](https://codecov.io/gh/EscolaLMS/H5P)
-[![phpunit](https://github.com/EscolaLMS/H5P/actions/workflows/test.yml/badge.svg)](https://github.com/EscolaLMS/Core/actions/workflows/test.yml)
-[![downloads](https://img.shields.io/packagist/dt/escolalms/headless-h5p)](https://packagist.org/packages/escolalms/headless-h5p)
-[![downloads](https://img.shields.io/packagist/v/escolalms/headless-h5p)](https://packagist.org/packages/escolalms/headless-h5p)
-[![downloads](https://img.shields.io/packagist/l/escolalms/headless-h5p)](https://packagist.org/packages/escolalms/headless-h5p)
-[![Maintainability](https://api.codeclimate.com/v1/badges/6316e8dc93a06d28c6a0/maintainability)](https://codeclimate.com/github/EscolaLMS/H5P/maintainability)
+Forked from [https://github.com/EscolaLMS](https://github.com/EscolaLMS/h5p)
 
-## Working demo 
+## Description
 
-Proof of concept demo is available at [https://github.com/EscolaLMS/h5p-laravel-demo](https://github.com/EscolaLMS/h5p-laravel-demo) and deployed to heroku [https://h5p-laravel-demo.herokuapp.com/](https://h5p-laravel-demo.herokuapp.com/). 
+This package provides a Laravel API for interacting with H5P content without installing **_unrelated_** dependencies.
 
+Main repository requires 8 unrelated packages - most of them are escolalms dependencies - to be installed:
+
+- EscolaLms/core
+- EscolaLms/auth
+- EscolaLms/settings
+- EscolaLms/files
+- EscolaLms/categories
+- EscolaLms/model-fields
+- spatie/permission
+- laravel/socialite
+
+
+# Original Documentation
 ## Features
 
 The lib allows headlessly
@@ -31,10 +38,10 @@ To play the content you can use [EscolaLMS H5P Player](https://github.com/Escola
 
 ## Install
 
-1. `composer require escolalms/headless-h5p`
+1. `composer require brnysn/headless-h5p`
 2. `php artisan migrate`
 3. `php artisan h5p:storage-link` see below 
-4. `php db:seed --class="EscolaLms\HeadlessH5P\Database\Seeders\PermissionTableSeeder"  see below 
+4. `php db:seed --class="brnysn\LaravelH5p\Database\Seeders\PermissionTableSeeder"  see below 
 
 ### Storage links
 

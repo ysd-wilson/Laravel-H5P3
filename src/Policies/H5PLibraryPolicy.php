@@ -1,9 +1,8 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P\Policies;
+namespace brnysn\LaravelH5P\Policies;
 
-use EscolaLms\Core\Models\User;
-use EscolaLms\HeadlessH5P\Enums\H5PPermissionsEnum;
+use brnysn\LaravelH5P\Enums\H5PPermissionsEnum;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class H5PLibraryPolicy

@@ -1,6 +1,6 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P\Services\Contracts;
+namespace brnysn\LaravelH5P\Services\Contracts;
 
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Collection;

@@ -1,8 +1,8 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P\Database\Seeders;
+namespace brnysn\LaravelH5P\Database\Seeders;
 
-use EscolaLms\HeadlessH5P\Services\Contracts\HeadlessH5PServiceContract;
+use brnysn\LaravelH5P\Services\Contracts\HeadlessH5PServiceContract;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;

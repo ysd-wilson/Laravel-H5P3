@@ -1,6 +1,6 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P\Commands;
+namespace brnysn\LaravelH5P\Commands;
 
 use Illuminate\Console\Command;
 

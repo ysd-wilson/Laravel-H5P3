@@ -1,9 +1,9 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P\Http\Requests;
+namespace brnysn\LaravelH5P\Http\Requests;
 
-use EscolaLms\HeadlessH5P\Models\H5PContent;
-use EscolaLms\HeadlessH5P\Repositories\Contracts\H5PContentRepositoryContract;
+use brnysn\LaravelH5P\Models\H5PContent;
+use brnysn\LaravelH5P\Repositories\Contracts\H5PContentRepositoryContract;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Gate;
 

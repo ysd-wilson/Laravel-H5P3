@@ -1,26 +1,25 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P\Http\Controllers;
+namespace brnysn\LaravelH5P\Http\Controllers;
 
-use EscolaLms\Core\Http\Controllers\EscolaLmsBaseController;
-use EscolaLms\HeadlessH5P\Dtos\ContentFilterCriteriaDto;
-use EscolaLms\HeadlessH5P\Http\Controllers\Swagger\ContentApiSwagger;
-use EscolaLms\HeadlessH5P\Http\Requests\ContentCreateRequest;
-use EscolaLms\HeadlessH5P\Http\Requests\ContentDeleteRequest;
-use EscolaLms\HeadlessH5P\Http\Requests\ContentListRequest;
-use EscolaLms\HeadlessH5P\Http\Requests\AdminContentReadRequest;
-use EscolaLms\HeadlessH5P\Http\Requests\ContentReadRequest;
-use EscolaLms\HeadlessH5P\Http\Requests\ContentUpdateRequest;
-use EscolaLms\HeadlessH5P\Http\Requests\LibraryStoreRequest;
-use EscolaLms\HeadlessH5P\Http\Resources\ContentIndexResource;
-use EscolaLms\HeadlessH5P\Http\Resources\ContentResource;
-use EscolaLms\HeadlessH5P\Repositories\Contracts\H5PContentRepositoryContract;
-use EscolaLms\HeadlessH5P\Services\Contracts\HeadlessH5PServiceContract;
+use brnysn\LaravelH5P\Dtos\ContentFilterCriteriaDto;
+use brnysn\LaravelH5P\Http\Controllers\Swagger\ContentApiSwagger;
+use brnysn\LaravelH5P\Http\Requests\ContentCreateRequest;
+use brnysn\LaravelH5P\Http\Requests\ContentDeleteRequest;
+use brnysn\LaravelH5P\Http\Requests\ContentListRequest;
+use brnysn\LaravelH5P\Http\Requests\AdminContentReadRequest;
+use brnysn\LaravelH5P\Http\Requests\ContentReadRequest;
+use brnysn\LaravelH5P\Http\Requests\ContentUpdateRequest;
+use brnysn\LaravelH5P\Http\Requests\LibraryStoreRequest;
+use brnysn\LaravelH5P\Http\Resources\ContentIndexResource;
+use brnysn\LaravelH5P\Http\Resources\ContentResource;
+use brnysn\LaravelH5P\Repositories\Contracts\H5PContentRepositoryContract;
+use brnysn\LaravelH5P\Services\Contracts\HeadlessH5PServiceContract;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
-class ContentApiController extends EscolaLmsBaseController implements ContentApiSwagger
+class ContentApiController extends BaseController implements ContentApiSwagger
 {
     private HeadlessH5PServiceContract $hh5pService;
     private H5PContentRepositoryContract $contentRepository;

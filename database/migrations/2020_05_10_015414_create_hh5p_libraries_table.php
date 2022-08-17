@@ -28,6 +28,7 @@ class CreateHH5pLibrariesTable extends Migration
             $table->text('preloaded_js', 65535)->nullable();
             $table->text('preloaded_css', 65535)->nullable();
             $table->text('drop_library_css', 65535)->nullable();
+            $table->text('add_to')->nullable();
             // TODO: this should be json
             $table->text('semantics', 65535);
             $table->string('tutorial_url', 1023);

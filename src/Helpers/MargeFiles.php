@@ -1,6 +1,6 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P\Helpers;
+namespace brnysn\LaravelH5P\Helpers;
 
 use Exception;
 

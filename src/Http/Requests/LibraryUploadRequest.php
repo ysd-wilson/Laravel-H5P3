@@ -1,8 +1,8 @@
 <?php
 
-namespace EscolaLms\HeadlessH5P\Http\Requests;
+namespace brnysn\LaravelH5P\Http\Requests;
 
-use EscolaLms\HeadlessH5P\Models\H5PLibrary;
+use brnysn\LaravelH5P\Models\H5PLibrary;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Gate;
