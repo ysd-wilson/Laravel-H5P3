@@ -1,8 +1,8 @@
 <?php
 
-namespace brnysn\LaravelH5P\Http\Requests;
+namespace Brnysn\LaravelH5P\Http\Requests;
 
-use brnysn\LaravelH5P\Models\H5PLibrary;
+use Brnysn\LaravelH5P\Models\H5PLibrary;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Gate;

@@ -1,6 +1,6 @@
 <?php
 
-namespace brnysn\LaravelH5P\Enums;
+namespace Brnysn\LaravelH5P\Enums;
 
 use BenSampo\Enum\Enum;
 use Illuminate\Support\Collection;

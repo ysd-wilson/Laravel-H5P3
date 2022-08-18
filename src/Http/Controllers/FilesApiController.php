@@ -1,12 +1,12 @@
 <?php
 
-namespace brnysn\LaravelH5P\Http\Controllers;
+namespace Brnysn\LaravelH5P\Http\Controllers;
 
 use Exception;
 use Illuminate\Http\JsonResponse;
-use brnysn\LaravelH5P\Http\Controllers\Swagger\FilesApiSwagger;
-use brnysn\LaravelH5P\Services\Contracts\HeadlessH5PServiceContract;
-use brnysn\LaravelH5P\Http\Requests\FilesStoreRequest;
+use Brnysn\LaravelH5P\Http\Controllers\Swagger\FilesApiSwagger;
+use Brnysn\LaravelH5P\Services\Contracts\HeadlessH5PServiceContract;
+use Brnysn\LaravelH5P\Http\Requests\FilesStoreRequest;
 
 class FilesApiController extends BaseController implements FilesApiSwagger
 {

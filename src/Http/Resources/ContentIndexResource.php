@@ -1,10 +1,10 @@
 <?php
 
-namespace brnysn\LaravelH5P\Http\Resources;
+namespace Brnysn\LaravelH5P\Http\Resources;
 
-use brnysn\LaravelH5P\Traits\ResourceExtendable;
+use Brnysn\LaravelH5P\Traits\ResourceExtendable;
 use Illuminate\Http\Resources\Json\JsonResource;
-use brnysn\LaravelH5P\Models\H5PLibrary;
+use Brnysn\LaravelH5P\Models\H5PLibrary;
 
 class ContentIndexResource extends JsonResource
 {

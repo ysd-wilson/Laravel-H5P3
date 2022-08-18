@@ -41,7 +41,7 @@ To play the content you can use [EscolaLMS H5P Player](https://github.com/Escola
 1. `composer require brnysn/headless-h5p`
 2. `php artisan migrate`
 3. `php artisan h5p:storage-link` see below 
-4. `php db:seed --class="brnysn\LaravelH5p\Database\Seeders\PermissionTableSeeder"  see below 
+4. `php db:seed --class="Brnysn\LaravelH5p\Database\Seeders\PermissionTableSeeder"  see below 
 
 ### Storage links
 

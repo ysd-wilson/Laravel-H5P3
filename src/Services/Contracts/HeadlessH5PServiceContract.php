@@ -1,6 +1,6 @@
 <?php
 
-namespace brnysn\LaravelH5P\Services\Contracts;
+namespace Brnysn\LaravelH5P\Services\Contracts;
 
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Collection;
