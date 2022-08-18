@@ -17,10 +17,10 @@
     },
     "autoload": {
         "psr-4": {
-            "Brnysn\\LaravelH5P\\": "src",
-            "Brnysn\\LaravelH5P\\Tests\\": "tests",
-            "Brnysn\\LaravelH5P\\Database\\Factories\\": "database/factories",
-            "Brnysn\\LaravelH5P\\Database\\Seeders\\": "database/seeders"
+            "brnysn\\LaravelH5P\\": "src",
+            "brnysn\\LaravelH5P\\Tests\\": "tests",
+            "brnysn\\LaravelH5P\\Database\\Factories\\": "database/factories",
+            "brnysn\\LaravelH5P\\Database\\Seeders\\": "database/seeders"
         }
     },
     "license": "MIT",
@@ -33,7 +33,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Brnysn\\LaravelH5P\\HeadlessH5PServiceProvider"
+                "brnysn\\LaravelH5P\\HeadlessH5PServiceProvider"
             ]
         }
     }
