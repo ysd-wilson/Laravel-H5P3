@@ -1,6 +1,6 @@
 <?php
 
-namespace Brnysn\LaravelH5P\Exceptions;
+namespace brnysn\LaravelH5P\Exceptions;
 
 use Exception;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Brnysn\LaravelH5P\Traits;
+namespace brnysn\LaravelH5P\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
 

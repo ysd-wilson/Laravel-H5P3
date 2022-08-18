@@ -1,8 +1,8 @@
 <?php
 
-namespace Brnysn\LaravelH5P\Database\Factories;
+namespace brnysn\LaravelH5P\Database\Factories;
 
-use Brnysn\LaravelH5P\Models\H5PLibrary;
+use brnysn\LaravelH5P\Models\H5PLibrary;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class H5PLibraryFactory extends Factory

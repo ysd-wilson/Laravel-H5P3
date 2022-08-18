@@ -1,11 +1,11 @@
 <?php
 
-namespace Brnysn\LaravelH5P\Dtos;
+namespace brnysn\LaravelH5P\Dtos;
 
-use Brnysn\LaravelH5P\Dtos\Contracts\InstantiateFromRequest;
-use Brnysn\LaravelH5P\Repositories\Criteria\Primitives\EqualCriterion;
-use Brnysn\LaravelH5P\Repositories\Criteria\Primitives\LikeCriterion;
-use Brnysn\LaravelH5P\Enums\H5PPermissionsEnum;
+use brnysn\LaravelH5P\Dtos\Contracts\InstantiateFromRequest;
+use brnysn\LaravelH5P\Repositories\Criteria\Primitives\EqualCriterion;
+use brnysn\LaravelH5P\Repositories\Criteria\Primitives\LikeCriterion;
+use brnysn\LaravelH5P\Enums\H5PPermissionsEnum;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 

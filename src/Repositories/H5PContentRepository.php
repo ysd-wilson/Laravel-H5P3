@@ -1,17 +1,17 @@
 <?php
 
-namespace Brnysn\LaravelH5P\Repositories;
+namespace brnysn\LaravelH5P\Repositories;
 
-use Brnysn\LaravelH5P\Repositories\Criteria\Criterion;
-use Brnysn\LaravelH5P\Dtos\ContentFilterCriteriaDto;
-use Brnysn\LaravelH5P\Exceptions\H5PException;
-use Brnysn\LaravelH5P\Helpers\Helpers;
-use Brnysn\LaravelH5P\Models\H5PContent;
-use Brnysn\LaravelH5P\Models\H5PLibrary;
-use Brnysn\LaravelH5P\Models\H5PTempFile;
-use Brnysn\LaravelH5P\Repositories\Contracts\H5PContentRepositoryContract;
-use Brnysn\LaravelH5P\Services\Contracts\HeadlessH5PServiceContract;
-use Brnysn\LaravelH5P\Traits\QueryExtendable;
+use brnysn\LaravelH5P\Repositories\Criteria\Criterion;
+use brnysn\LaravelH5P\Dtos\ContentFilterCriteriaDto;
+use brnysn\LaravelH5P\Exceptions\H5PException;
+use brnysn\LaravelH5P\Helpers\Helpers;
+use brnysn\LaravelH5P\Models\H5PContent;
+use brnysn\LaravelH5P\Models\H5PLibrary;
+use brnysn\LaravelH5P\Models\H5PTempFile;
+use brnysn\LaravelH5P\Repositories\Contracts\H5PContentRepositoryContract;
+use brnysn\LaravelH5P\Services\Contracts\HeadlessH5PServiceContract;
+use brnysn\LaravelH5P\Traits\QueryExtendable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
@@ -37,7 +37,6 @@ class H5PContentRepository implements H5PContentRepositoryContract
             ['major_version', $libNames['majorVersion']],
             ['minor_version', $libNames['minorVersion']],
         ])->first();
-
         if ($libDb === null) {
             throw new H5PException(H5PException::LIBRARY_NOT_FOUND);
         }

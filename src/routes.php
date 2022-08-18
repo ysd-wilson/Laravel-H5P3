@@ -1,11 +1,11 @@
 <?php
 
-use Brnysn\LaravelH5P\Http\Controllers\ContentApiController;
-use Brnysn\LaravelH5P\Http\Controllers\EditorApiController;
-use Brnysn\LaravelH5P\Http\Controllers\FilesApiController;
-use Brnysn\LaravelH5P\Http\Controllers\LibraryApiController;
-use Brnysn\LaravelH5P\Http\Middleware\H5PLangMiddleware;
-use Brnysn\LaravelH5P\Http\Middleware\QueryToken;
+use brnysn\LaravelH5P\Http\Controllers\ContentApiController;
+use brnysn\LaravelH5P\Http\Controllers\EditorApiController;
+use brnysn\LaravelH5P\Http\Controllers\FilesApiController;
+use brnysn\LaravelH5P\Http\Controllers\LibraryApiController;
+use brnysn\LaravelH5P\Http\Middleware\H5PLangMiddleware;
+use brnysn\LaravelH5P\Http\Middleware\QueryToken;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => ['api', H5PLangMiddleware::class], 'prefix' => 'api'], function () {
