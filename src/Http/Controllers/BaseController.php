@@ -1,6 +1,6 @@
 <?php
 
-namespace brnysn\LaravelH5P\Http\Controllers;
+namespace Brnysn\LaravelH5P\Http\Controllers;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;

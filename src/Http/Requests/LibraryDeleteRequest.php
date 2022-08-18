@@ -1,8 +1,8 @@
 <?php
 
-namespace brnysn\LaravelH5P\Http\Requests;
+namespace Brnysn\LaravelH5P\Http\Requests;
 
-use brnysn\LaravelH5P\Repositories\Contracts\H5PContentRepositoryContract;
+use Brnysn\LaravelH5P\Repositories\Contracts\H5PContentRepositoryContract;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Gate;
 

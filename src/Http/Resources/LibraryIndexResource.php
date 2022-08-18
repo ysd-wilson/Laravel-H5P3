@@ -1,8 +1,8 @@
 <?php
 
-namespace brnysn\LaravelH5P\Http\Resources;
+namespace Brnysn\LaravelH5P\Http\Resources;
 
-use brnysn\LaravelH5P\Models\H5PLibrary;
+use Brnysn\LaravelH5P\Models\H5PLibrary;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class LibraryIndexResource extends JsonResource

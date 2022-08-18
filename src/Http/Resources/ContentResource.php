@@ -1,8 +1,8 @@
 <?php
 
-namespace brnysn\LaravelH5P\Http\Resources;
+namespace Brnysn\LaravelH5P\Http\Resources;
 
-use brnysn\LaravelH5P\Models\H5PContent;
+use Brnysn\LaravelH5P\Models\H5PContent;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class ContentResource extends JsonResource

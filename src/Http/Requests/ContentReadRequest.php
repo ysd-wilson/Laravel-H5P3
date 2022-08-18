@@ -1,8 +1,8 @@
 <?php
 
-namespace brnysn\LaravelH5P\Http\Requests;
+namespace Brnysn\LaravelH5P\Http\Requests;
 
-use brnysn\LaravelH5P\Models\H5PContent;
+use Brnysn\LaravelH5P\Models\H5PContent;
 use Illuminate\Foundation\Http\FormRequest;
 use Ramsey\Uuid\Uuid;
 

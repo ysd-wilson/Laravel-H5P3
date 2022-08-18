@@ -1,11 +1,11 @@
 <?php
-namespace brnysn\LaravelH5P\Repositories\Contracts;
+namespace Brnysn\LaravelH5P\Repositories\Contracts;
 
-use brnysn\LaravelH5P\Dtos\ContentFilterCriteriaDto;
+use Brnysn\LaravelH5P\Dtos\ContentFilterCriteriaDto;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Collection;
-use brnysn\LaravelH5P\Models\H5PContent;
-use brnysn\LaravelH5P\Models\H5PLibrary;
+use Brnysn\LaravelH5P\Models\H5PContent;
+use Brnysn\LaravelH5P\Models\H5PLibrary;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 interface H5PContentRepositoryContract

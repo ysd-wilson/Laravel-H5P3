@@ -1,8 +1,8 @@
 <?php
 
-namespace brnysn\LaravelH5P\Policies;
+namespace Brnysn\LaravelH5P\Policies;
 
-use brnysn\LaravelH5P\Enums\H5PPermissionsEnum;
+use Brnysn\LaravelH5P\Enums\H5PPermissionsEnum;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class H5PLibraryPolicy

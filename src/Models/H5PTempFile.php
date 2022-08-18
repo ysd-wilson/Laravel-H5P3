@@ -1,6 +1,6 @@
 <?php
 
-namespace brnysn\LaravelH5P\Models;
+namespace Brnysn\LaravelH5P\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

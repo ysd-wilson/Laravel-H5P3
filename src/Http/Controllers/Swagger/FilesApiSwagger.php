@@ -1,11 +1,11 @@
 <?php
 
-namespace brnysn\LaravelH5P\Http\Controllers\Swagger;
+namespace Brnysn\LaravelH5P\Http\Controllers\Swagger;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
-use brnysn\LaravelH5P\Http\Requests\FilesStoreRequest;
+use Brnysn\LaravelH5P\Http\Requests\FilesStoreRequest;
 
 interface FilesApiSwagger
 {

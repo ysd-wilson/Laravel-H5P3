@@ -1,6 +1,6 @@
 <?php
 
-namespace brnysn\LaravelH5P\Http\Controllers\Swagger;
+namespace Brnysn\LaravelH5P\Http\Controllers\Swagger;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;

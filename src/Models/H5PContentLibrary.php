@@ -1,8 +1,8 @@
 <?php
 
-namespace brnysn\LaravelH5P\Models;
+namespace Brnysn\LaravelH5P\Models;
 
-use brnysn\LaravelH5P\Database\Factories\H5PContentLibraryFactory;
+use Brnysn\LaravelH5P\Database\Factories\H5PContentLibraryFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
