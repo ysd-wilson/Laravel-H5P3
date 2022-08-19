@@ -30,7 +30,7 @@ class H5PContentRepository implements H5PContentRepositoryContract
 
     public function create(string $title, string $library, string $params, string $nonce): int
     {
-        $user = auth()->user();
+        $user = auth()->user() ?? App\Models\User::first();
         $libNames = $this->hh5pService->getCore()->libraryFromString($library);
         $libDb = H5PLibrary::where([
             ['name', $libNames['machineName']],

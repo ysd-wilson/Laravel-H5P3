@@ -9,12 +9,12 @@ use Brnysn\LaravelH5P\Enums\H5PPermissionsEnum;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 
-class ContentFilterCriteriaDto extends CriteriaDto implements InstantiateFromRequest
+    class ContentFilterCriteriaDto extends CriteriaDto implements InstantiateFromRequest
 {
     public static function instantiateFromRequest(Request $request): self
     {
         $criteria = new Collection();
-        $user = auth()->user();
+//        $user = auth()->user();
 
         if ($request->has('title')) {
             $criteria->push(new LikeCriterion('hh5p_contents.title', $request->input('title')));
@@ -24,9 +24,8 @@ class ContentFilterCriteriaDto extends CriteriaDto implements InstantiateFromReq
             $criteria->push(new EqualCriterion('hh5p_contents.user_id', $request->input('author_id')));
         }
 //        if (!$user->can(H5PPermissionsEnum::H5P_LIST) && $user->can(H5PPermissionsEnum::H5P_AUTHOR_LIST)) {
-        if (true) {
-            $criteria->push(new EqualCriterion('hh5p_contents.user_id', $user->getKey()));
-        }
+//            $criteria->push(new EqualCriterion('hh5p_contents.user_id', $user->getKey()));
+//        }
         if ($request->has('library_id')) {
             $criteria->push(new EqualCriterion('hh5p_contents.library_id', $request->input('library_id')));
         }
