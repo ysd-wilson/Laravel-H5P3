@@ -6,6 +6,7 @@ use Brnysn\LaravelH5P\Http\Requests\LibraryDeleteRequest;
 use Brnysn\LaravelH5P\Http\Requests\LibraryInstallRequest;
 use Brnysn\LaravelH5P\Http\Requests\LibraryListRequest;
 use Brnysn\LaravelH5P\Http\Requests\LibraryUploadRequest;
+use Brnysn\LaravelH5P\Http\Requests\LibraryFilterRequest;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
@@ -273,7 +274,7 @@ interface LibraryApiSwagger
      *      )
      * )
      */
-    public function filter(Request $request): JsonResponse;
+    public function filter(LibraryFilterRequest $request): JsonResponse;
 
 
     /**

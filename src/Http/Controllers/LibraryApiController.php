@@ -6,6 +6,7 @@ use Brnysn\LaravelH5P\Http\Requests\LibraryDeleteRequest;
 use Brnysn\LaravelH5P\Http\Requests\LibraryInstallRequest;
 use Brnysn\LaravelH5P\Http\Requests\LibraryListRequest;
 use Brnysn\LaravelH5P\Http\Requests\LibraryUploadRequest;
+use Brnysn\LaravelH5P\Http\Requests\LibraryFilterRequest;
 use Brnysn\LaravelH5P\Http\Resources\LibraryResource;
 use Illuminate\Http\JsonResponse;
 use Brnysn\LaravelH5P\Http\Controllers\Swagger\LibraryApiSwagger;
@@ -80,7 +81,6 @@ class LibraryApiController extends BaseController implements LibraryApiSwagger
 
     public function libraryInstall(LibraryInstallRequest $request): JsonResponse
     {
-        // TODO here is token sent somehow. validate this
         $library = $this->hh5pService->libraryInstall($request->getMachineName());
         return response()->json(['success' => true, 'data' => $library]);
     }
@@ -92,9 +92,9 @@ class LibraryApiController extends BaseController implements LibraryApiSwagger
         return response()->json(['success' => true, 'data' => $library]);
     }
 
-    public function filter(Request $request): JsonResponse
+    public function filter(LibraryFilterRequest $request): JsonResponse
     {
-        $libraryParameters = $request->get('libraryParameters');
+        $libraryParameters = $request->getLibraryParameters();
         $libraries = $this->hh5pService->filterLibraries($libraryParameters);
 
         return response()->json(['success' => true, 'data' => $libraries]);
