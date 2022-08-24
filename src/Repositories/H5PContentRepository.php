@@ -55,8 +55,6 @@ class H5PContentRepository implements H5PContentRepositoryContract
             'nonce' => $nonce,
 //            'user_id' => $user->getKey(),
 //            'author' => $user->email,
-            'user_id' => 1,
-            'author' => 'brnysn@gmail.com',
         ]);
 
         $this->moveTmpFilesToContentFolders($nonce, $content);
