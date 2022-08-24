@@ -14,12 +14,13 @@ class CreateHH5pLibrariesLanguagesTable extends Migration
     public function up()
     {
         Schema::create('hh5p_libraries_languages', function (Blueprint $table) {
+            $table->id();
             $table->bigInteger('library_id')->unsigned();
             $table->foreign('library_id')->references('id')->on('hh5p_libraries')->onDelete('cascade');
             $table->string('language_code', 31);
             // TODO: this should be json
             $table->text('translation', 65535);
-            $table->primary(['library_id', 'language_code'], 'fk_primary');
+            $table->unique(['library_id', 'language_code'], 'hh5p_libraries_languages_unique_key');
             // TODO: add foreign keys
         });
     }

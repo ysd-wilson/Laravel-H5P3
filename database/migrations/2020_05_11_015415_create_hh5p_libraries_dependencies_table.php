@@ -14,12 +14,13 @@ class CreateHH5pLibrariesDependenciesTable extends Migration
     public function up()
     {
         Schema::create('hh5p_libraries_dependencies', function (Blueprint $table) {
+            $table->id();
             $table->bigInteger('library_id')->unsigned();
             $table->foreign('library_id')->references('id')->on('hh5p_libraries')->onDelete('cascade');
             $table->bigInteger('required_library_id')->unsigned();
             $table->foreign('required_library_id')->references('id')->on('hh5p_libraries')->onDelete('cascade');
             $table->string('dependency_type', 31);
-            $table->primary(['library_id', 'required_library_id'], 'fk_primary');
+            $table->unique(['library_id', 'required_library_id'], 'hh5p_libraries_dependencies_unique_key');
 
             // TODO add foreign key
         });
