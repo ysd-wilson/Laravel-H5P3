@@ -14,6 +14,7 @@ use H5PPermission;
 use H5PFrameworkInterface;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
+use http\Env\Url;
 use Illuminate\Support\Facades\DB;
 use DateTime;
 use Illuminate\Support\Facades\Cache;
@@ -184,7 +185,7 @@ class H5PRepository implements H5PFrameworkInterface
     {
 //        $path = 'h5p/libraries/' . $libraryFolderName . '/' . $fileName;
 //        return Storage::disk('local')->exists($path) ? Storage::disk('local')->url($path) : null;
-        return 'https://diyalekt.test/storage/h5p/libraries/' . $libraryFolderName . '/' . $fileName;
+        return config('app.url').'/storage/h5p/libraries/' . $libraryFolderName . '/' . $fileName;
     }
 
     /**
