@@ -1,6 +1,6 @@
 {
     "name": "brnysn/laravel-h5p",
-    "description": "Headless H5P Laravel REST API",
+    "description": "H5P integration for Laravel without any additional dependencies.",
     "type": "package",
     "require": {
         "php": ">=7.4",

@@ -182,8 +182,9 @@ class H5PRepository implements H5PFrameworkInterface
      */
     public function getLibraryFileUrl($libraryFolderName, $fileName)
     {
-        $path = 'h5p/libraries/' . $libraryFolderName . '/' . $fileName;
-        return Storage::disk('local')->exists($path) ? Storage::disk('local')->url($path) : null;
+//        $path = 'h5p/libraries/' . $libraryFolderName . '/' . $fileName;
+//        return Storage::disk('local')->exists($path) ? Storage::disk('local')->url($path) : null;
+        return 'https://diyalekt.test/storage/h5p/libraries/' . $libraryFolderName . '/' . $fileName;
     }
 
     /**
