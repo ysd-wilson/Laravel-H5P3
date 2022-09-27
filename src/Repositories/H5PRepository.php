@@ -583,7 +583,7 @@ class H5PRepository implements H5PFrameworkInterface
             $metadata = ['license' => 'U', 'authors' => [], 'changes' => [], 'extraTitle' => $defaultTitle, 'title' => $defaultTitle];
         }
 
-        $filtered = $parameters['params'];
+        $filtered = json_encode($parameters)['params'];
         $parameters = [
             'params' => $parameters,
             'metadata' => $metadata,
