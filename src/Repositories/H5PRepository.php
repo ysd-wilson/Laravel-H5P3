@@ -589,6 +589,7 @@ class H5PRepository implements H5PFrameworkInterface
         ];
 
         $content['parameters'] = json_encode($parameters);
+        $content['filtered'] = $parameters;
 
         return $content;
     }

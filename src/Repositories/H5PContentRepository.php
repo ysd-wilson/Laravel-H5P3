@@ -94,7 +94,6 @@ class H5PContentRepository implements H5PContentRepositoryContract
             'title' => $title,
             'library' => $library,
             'parameters' => $params,
-            'filtered' => $params['params']
             //'nonce'=>$nonce
         ], $id);
 
