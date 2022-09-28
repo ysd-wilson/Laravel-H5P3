@@ -2,7 +2,7 @@
 return [
     'domain' => 'domain',
     'url' => 'h5p',
-    'ajaxSetFinished' => config('app.url').'api/contentSolved',
+    'ajaxSetFinished' => 'api/contentSolved',
     'ajaxContentUserData' => 'contentUserData',
     'saveFreq' => 'saveFreq',
     'l10n' => 'l10n',
