@@ -2,7 +2,7 @@
 return [
     'domain' => 'domain',
     'url' => 'h5p',
-    'ajaxSetFinished' => 'ajaxSetFinished',
+    'ajaxSetFinished' => config('app.url').'api/contentSolved',
     'ajaxContentUserData' => 'contentUserData',
     'saveFreq' => 'saveFreq',
     'l10n' => 'l10n',
@@ -17,7 +17,6 @@ return [
     'get_h5pcore_url' => 'h5p-core',
 
     // Content screen setting
-
     'h5p_show_display_option'    => true,
     'h5p_frame'                  => true,
     'h5p_export'                 => false,
