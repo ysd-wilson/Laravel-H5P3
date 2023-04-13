@@ -76,7 +76,7 @@ class H5PContentRepository implements H5PContentRepositoryContract
             throw new H5PException(H5PException::LIBRARY_NOT_FOUND);
         }
 
-        $json = json_decode($params);
+        $json = json_decode($params, true);
 
         if ($json === null) {
             throw new H5PException(H5PException::INVALID_PARAMETERS_JSON);
@@ -94,7 +94,7 @@ class H5PContentRepository implements H5PContentRepositoryContract
             'title' => $title,
             'library' => $library,
             'parameters' => $params,
-            'filtered' => $params['params']
+            'filtered' => $json['params']
             //'nonce'=>$nonce
         ], $id);
 
