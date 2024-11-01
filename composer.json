@@ -5,7 +5,7 @@
     "require": {
         "php": ">=7.4",
         "bensampo/laravel-enum": ">=2.0",
-        "laravel/framework": "^8|^9",
+        "laravel/framework": "^8|^9|^10",
         "h5p/h5p-core": "^1|dev-master",
         "h5p/h5p-editor": "^1|dev-master"
     },
