@@ -96,7 +96,10 @@ class H5PEditorAjaxRepository implements H5PEditorAjaxInterface
      * @return bool True if successful validation
      */
     public function validateEditorToken($token): bool
-    {
+    {   
+        //disable auth check
+        return true;
+
         if (!$token) {
             return false;
         }

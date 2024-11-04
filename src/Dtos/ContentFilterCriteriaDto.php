@@ -24,9 +24,9 @@ use Illuminate\Support\Collection;
             $criteria->push(new EqualCriterion('hh5p_contents.user_id', $request->input('author_id')));
         }
 //        if (!$user->can(H5PPermissionsEnum::H5P_LIST) && $user->can(H5PPermissionsEnum::H5P_AUTHOR_LIST)) {
-        if (auth()->user()) {
-            $criteria->push(new EqualCriterion('hh5p_contents.user_id', auth()->user()->getKey()));
-        }
+        // if (auth()->user()) {
+        //     $criteria->push(new EqualCriterion('hh5p_contents.user_id', auth()->user()->getKey()));
+        // }
         if ($request->has('library_id')) {
             $criteria->push(new EqualCriterion('hh5p_contents.library_id', $request->input('library_id')));
         }
